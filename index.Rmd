@@ -1,0 +1,7 @@
+---
+title: "Website"
+author: "Brandon Sucrese"
+output: html_document
+---
+
+Thank you for visiting my website. Here you can find Case Study 1 and Case Study 2.

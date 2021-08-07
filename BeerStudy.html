@@ -246,7 +246,10 @@ $(document).ready(function () {
   <a href="index.html">About Me</a>
 </li>
 <li>
-  <a href="BeerStudy.html">Beer Study</a>
+  <a href="BeerStudy.html">Case Study 1</a>
+</li>
+<li>
+  <a href="CaseStudy2.html">Case Study 2</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -270,36 +273,14 @@ $(document).ready(function () {
 <p>Introduction: Welcome to the brewery and beer analysis. The following code will walk through important discovers about beer. We will be looking at quantity of breweries and the distribution of beers’ alcohol content. We will also explore the relationship between alcohol content and bitterness as well as how the style of beer effects these variables. Lastly we will look into which states have the highest different in alcohol among their beers. Understanding how beer works and it’s finer details, always us to better understand beers in the future.</p>
 <p>Code Summary: Reads in necessary libraries.</p>
 <pre class="r"><code>library(naniar)
-library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ──────────────────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
-<pre><code>## ✓ ggplot2 3.3.3     ✓ purrr   0.3.4
-## ✓ tibble  3.1.1     ✓ dplyr   1.0.6
-## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
-## ✓ readr   1.4.0     ✓ forcats 0.5.1</code></pre>
-<pre><code>## ── Conflicts ─────────────────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(mice)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;mice&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:stats&#39;:
-## 
-##     filter</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     cbind, rbind</code></pre>
-<pre class="r"><code>library(ggplot2)
+library(tidyverse)
+library(mice)
+library(ggplot2)
 library(htmlwidgets)
 library(caTools)
 library(class)
-library(caret)</code></pre>
-<pre><code>## Loading required package: lattice</code></pre>
-<pre><code>## 
-## Attaching package: &#39;caret&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:purrr&#39;:
-## 
-##     lift</code></pre>
-<pre class="r"><code>library(stats)
+library(caret)
+library(stats)
 library(dplyr)
 library(agricolae)</code></pre>
 <p>Code Summary: Reads in the beer and breweries data sets. Sets the variables to the correct type and summaries the two data sets.</p>
